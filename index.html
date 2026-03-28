@@ -2,136 +2,60 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Ezequias da Silva Cordeiro, desenvolvedor Front-End focado em HTML, CSS e JavaScript.">
-    
-    <title>Ezequias.dev | Portfólio</title>
-
-    <link rel="icon" href="assets/images/code (3).png" type="image/x-icon">
-
-    <link rel="stylesheet" href="assets/index.css">
-
+    <title>Meu portfólio</title>
+    <link rel="shortcut icon" href="assets/images/blob.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Condiment&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    <header>
-        <div class="container section-header">
-            <nav>
-                <ul class="top-menu" id="menu-principal">
-                    <li>
-                        <a href="index.html" aria-label="Voltar ao início">
-                            Ezequias Cordeiro
-                        </a>
-                    </li>
-                </ul>
-                <ul class="top-menu navigation-links">
-                    <li><a href="#section-sobre">Sobre</a></li>
-                    <li><a href="#card-Projetos">Projetos</a></li>
-                    <li><a href="#section-exp">Experiência</a></li>
-                </ul>
-                <ul class="menu-contato">
-                    <li><a href="#section-contato" class="btn-contato">Contato</a></li>
+    <section class="layout-container">
+        <header class="sidebar">
+            <nav class="nav-barra-navegacao">
+                <ul>
+                    <li><a href="#inicio" class="nav-link active" data-target="inicio">Início</a></li>
+                    <li><a href="#sobre" class="nav-link" data-target="sobre">Sobre</a></li>
+                    <li><a href="#contato" class="nav-link" data-target="contato">Contato</a></li>
+                    <li><a href="#formacao" class="nav-link" data-target="formacao">Formação</a></li>
                 </ul>
             </nav>
-        </div>
-    </header>
+        </header>
+        <main class="content">
+            <section id="inicio" class="section-content tab-content active">
+                <div class="div-texto">
+                    <h1>Esse é o meu portfólio</h1>
+                    <h2>Apaixoado por tecnologia, interfaces intuitivas e responsivas</h2>
+                    <p>Front End Developer</p>
+                </div>
+            </section>
 
-    <main>
-        <section class="section-hero">
-            <div class="hero-content">
-                <figure class="hero-image-container">
-                    <img class="foto-perfil" src="./assets/images/Imagem do WhatsApp de 2025-09-27 à(s) 12.14.55_1e224bf2.jpg" alt="Foto de perfil de Ezequias">
-                    <div class="classquadro-na-foto"></div>
-                </figure>
-                <div class="hero-text">
-                    <h1>Olá, eu sou o</h1>
-                    <div class="ezequias-efeito">
-                        <svg viewBox="0 0 500 100">
-                            <text x="50%" y="50%" dy=".35em" text-anchor="middle" class="snake-text">
-                            Ezequias 
-                            </text>
-                        </svg>
+            <section id="sobre" class="section-content tab-content">
+                <div class="div-texto">
+                    <img class="foto-perfil" src="assets/images/Imagem do WhatsApp de 2025-09-27 à(s) 12.14.55_1e224bf2.jpg" alt="Minha foto de perfil">
+                    <div class="div-texto-sobre">
+                        <h2>Olá, eu sou o Ezequias</h2>
+                        <p>Em busca de oportunidade como estagiário ou júnior em Desenvolvimento de Software. Trago uma sólida experiência em atendimento ao cliente, onde desenvolvi fortes habilidades de comunicação, escuta ativa e resolução ágil de problemas, competências que agora aplico no desenvolvimento de soluções tecnológicas. Atualmente estou focado em criar interfaces intuitivas e acessíveis, e aprimorar meus conhecimentos em Javascript, também tenho total interesse em aprender novas linguagens.</p>
+                        <div class="class-buttons-texto-sobre">
+                            <a class="button-fake-curriculo" target="_blank" href="https://docs.google.com/document/d/1uMgdOuiq-iREubiOesTDBlc4oc0ca95BE3ZkVqqdjGI/edit?usp=sharing">Currículo em PDF</a>
+                            <a class="button-fake-curriculo" href="https://github.com/dev-ezequias" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i>Meu Github</a>
+                        </div>
                     </div>
-                    <div class="div-h4">
-                        <h4>Front End</h4>
-                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="section-sobre" class="section-content">
-            <div class="ezequiascordeiro">
-                <h2>Sobre</h2>
-                <p>Em busca de oportunidade como estagiário ou júnior em Desenvolvimento Front End. Trago uma sólida experiência em atendimento ao cliente, onde desenvolvi fortes habilidades de comunicação, escuta ativa e resolução ágil de problemas, competências que agora aplico no desenvolvimento de soluções tecnológicas. Atualmente estou focado em aprimorar meus conhecimentos, me aprofundando em JavaScript e React.</p>
-            </div>
-            
-            <div class="Projetos" id="card-Projetos">
-                <h2>Projetos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores corrupti recusandae quisquam voluptatum expedita, odit saepe aliquid perferendis eos officiis quas fugit eveniet labore delectus dolorem, commodi quia dicta.
-                Asperiores, pariatur rerum commodi aperiam ipsa est explicabo impedit ullam dolor magni, provident laudantium architecto eius nemo. Tempore rerum necessitatibus architecto. Voluptates sit sed quisquam totam consequuntur iusto veniam ducimus.
-                Aperiam fugiat ratione temporibus qui quod voluptatum officiis est saepe natus, optio libero incidunt non ad in nulla illum aspernatur magni. Omnis nesciunt quisquam voluptates, error laboriosam illum at ducimus?
-                Id laboriosam qui, officiis veniam nisi expedita? Temporibus qui laboriosam error ex reprehenderit eum, ullam soluta numquam, voluptatum amet veniam odit nisi! Quis nemo voluptas soluta cum perferendis iusto ut.
-                Libero repellat perspiciatis voluptates eos, culpa dolorem architecto, unde harum alias nihil veniam quae voluptatem, iste accusamus cupiditate recusandae? Molestias quibusdam quis obcaecati impedit. Unde ex culpa qui enim ab?
-                Facere et ducimus minus accusamus corrupti optio expedita repellendus quibusdam veritatis, similique consequatur laborum qui quod pariatur soluta necessitatibus ad quidem, dolorum adipisci nobis illum eius! Similique deleniti odit architecto.
-                Dolorem dolores pariatur quo adipisci similique libero ad facilis voluptatibus, perspiciatis unde quos tenetur quasi ullam labore minus vero quas quaerat consequuntur aliquid quibusdam maxime numquam delectus fugit. Possimus, quasi.
-                Iste minus laudantium, vel sit vitae ab temporibus consequatur nobis, repellendus, voluptatem amet dolores dolorem debitis est autem labore provident a nisi molestias? Dolorem, sapiente quam quae est dolor error.
-                Inventore ipsam dolore ea harum similique aliquam dolores ratione itaque voluptatem molestias reprehenderit modi error, sint tempore. Saepe quo ab fuga unde voluptate! Odio repellat quia nulla possimus optio laboriosam.
-                Blanditiis nemo ipsa quam deserunt accusantium qui illum animi commodi distinctio quia dolorem ad eum aperiam nostrum soluta fuga doloremque officiis, ut necessitatibus porro optio voluptatum. Vero deleniti ratione libero.</p>
-            </div>
-            <!-- <article class="card-formacao">
-                <h3>Análise e Desenvolvimento de Sistemas</h3>
-                <img width="300" src="assets/images/descomplica.png" alt="Logo Descomplica">
-                <h4>Faculdade</h4>
-                <p>O curso tecnólogo em Análise e Desenvolvimento de Sistemas...</p>
-                <div class="formacao-buttons">   
-                    <a class="btn-small" href="https://descomplica.com.br" target="_blank"><i class="fa-solid fa-link"></i> Site</a>
-                    <a class="btn-small" href="#" target="_blank"><i class="fa-regular fa-file-lines"></i> Grade curricular</a>
-                </div>
-            </article> -->
-        </section>
-
-        <section id="section-exp" class="section-content">
-            <h2>Exp</h2>
-            <div class="class-formacao">
-                <div class="class-texto">
-                    <p>Atualmente estou cursando o primerio período de Análise e desenvolvimento de Sistemas. Em paralelo sou aluno da Escola da Nuvem, com estudos focados em Cloud/AWS.</p>
-                </div>
-                <div class="div-cards">
-                    <h4>
-                        Tecnólogo
-                    </h4>
-                    <p>Análise e Desenvolvimento de Sistemas</p>
-                    <h5> Gran Faculdade</h5>
-                </div>
-                <div class="div-cards">
-                    <h4>
-                        Técnico
-                    </h4>
-                    <p>Computação em Nuvem</p>
-                    <h5>Escola da Nuvem</h5>
-                </div>
-                <div class="div-cards">
-                    <h4>
-                        Tecnólogo
-                    </h4>
-                    <p>Análise e Desenvolvimento de Sistemas</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="section-contato" class="section-content">
-            <h2>Contato</h2>
-            <div class="formulario-container">
+            <section id="contato" class="section-content tab-content">
+                <div class="div-texto">
+                    <h2>Entre em contato</h2>
+                
                 <form class="form-global" action="#" method="POST">
-                    <h3>Mande uma mensagem por aqui</h3>
                     <div class="form-group">
                         <label for="name">Nome:</label>
                         <input id="name" name="name" type="text" placeholder="Seu nome completo" required>
@@ -149,39 +73,52 @@
 
                     <button id="btn-submit" type="submit" class="btn-submit" target="_blank" onclick="enviar(event)">Enviar</button>
                 </form>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <a href="#" class="btn-topo" id="btnTopo" aria-label="Voltar ao topo">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 15l-6-6-6 6"/>
-        </svg>
-        </a>
-        <div class="section-buttons">
-                <a class="btn" href="mailto:ezequias.sccontato@gmail.com" target="_blank" aria-label="Enviar e-mail">
-                    <i class="fa-solid fa-envelope fa-lg"></i> 
-                </a>
-                <a class="btn button-wa" href="https://wa.link/clbg2t" target="_blank" aria-label="Conversar no WhatsApp">
-                    <i class="fa-brands fa-whatsapp fa-xl"></i>
-                </a>
-                <!-- <a class="btn" href="https://docs.google.com/document/d/seu-link-aqui" target="_blank" aria-label="Baixar Currículo">
-                    <i class="fa-solid fa-circle-arrow-down fa-xl"></i> Ver currículo
-                </a> -->
-        </div>
-        <div class="div-sociais-bottom">
-            <ul class="social-list">
-                <li><a href="https://www.linkedin.com/in/dev-ezequias/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://github.com/dev-ezequias" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://x.com/quiasssc" target="_blank" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a></li>
-                <li><a href="https://discord.gg/UqAAXhMv" target="_blank" aria-label="Discord"><i class="fa-brands fa-discord"></i></a></li>
-            </ul>
-        </div>
-    </footer>
-    <section class="desenvolvidopor">
-            <a href="https://linktr.ee/devezequias" target="_blank">Desenvolvido por Ezequias Cordeiro ©</a>
 
-    </section>
-</body>
+                <ul class="social-list">
+                    <li><a href="https://www.linkedin.com/in/dev-ezequias/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <!-- <li><a href="https://github.com/dev-ezequias" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li> -->
+                     <a class="btn" href="mailto:ezequias.sccontato@gmail.com" target="_blank" aria-label="Enviar e-mail"><i class="fa-solid fa-envelope"></i>
+                    <li><a class="btn button-wa" href="https://wa.link/clbg2t" target="_blank" aria-label="Conversar no WhatsApp"><i class="fa-brands fa-whatsapp"></i></li>
+                    <li><a href="https://discord.gg/UqAAXhMv" target="_blank" aria-label="Discord"><i class="fa-brands fa-discord"></i></a></li>
+                </ul>
+                    
+                </div>
+            </section>
+
+            <section id="formacao" class="section-content tab-content">
+                <div class="div-texto">
+                    <h2>Formação</h2>
+                    <div class="class-formacao">
+                        <div class="class-texto">
+                            <p>Atualmente estou cursando o primerio período de Análise e desenvolvimento de Sistemas. Em paralelo sou aluno da DIO, com estudos focados em Lógica de programação.</p>
+                            </div>
+                            <section class="class-section-cards-e-texto">
+                                <div class="div-cards">
+                                    <h4>
+                                        Tecnólogo
+                                    </h4>
+                                    <p>Análise e Desenvolvimento de Sistemas</p>
+                                    <h5> Gran Faculdade</h5>
+                                    <p>Estou no primeiro período, atualmente estudo as matérias: Arquitetura de computares e Sistemas Operacionais, Práticas de programação, Engenharia de Software</p>
+                                </div>
+                                <div class="div-cards">
+                                    <h4>
+                                        Bootcamp
+                                    </h4>
+                                    <p>Fundamentos de Lógica de Programação</p>
+                                    <h5> DIO</h5>
+                                    <p>Curso com foco em pensamento computacional, estruturação de código, funções, objetos e automação de decisões com dados, utilizando a linguagem Javascript.</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="classfooter-developer">
+                <a href="https://linktr.ee/devezequias" target="_blank">Desenvolvido por Ezequias Cordeiro © </a>
+            </section>
+        </main>
 <script src="index.js"></script>
+</body>
 </html>
