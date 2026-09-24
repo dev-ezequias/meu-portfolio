@@ -1,0 +1,163 @@
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .content .tab-content .div-texto h1 {
+    font-size: 48px;
+  }
+
+  .content #sobre .div-texto {
+    width: 90%;
+    gap: 20px;
+  }
+
+  .content #sobre .div-texto-sobre {
+    width: 50%;
+  }
+
+  .content #sobre .foto-perfil {
+    width: 380px;
+    height: 380px;
+  }
+
+  .content #formacao .div-cards {
+    width: 100%;
+  }
+}
+
+/* --- TELAS PEQUENAS (Smartphones - até 768px) --- */
+@media (max-width: 768px) {
+  /* Layout principal em coluna */
+  .layout-container {
+    flex-direction: column;
+  }
+
+  /* Cabeçalho superior no mobile */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(15, 15, 25, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 12px;
+    justify-content: center;
+  }
+
+  .sidebar nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sidebar nav ul {
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .sidebar a {
+    border-right: none;
+    border-bottom: 2px solid transparent;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .sidebar a:hover,
+  .sidebar a.active {
+    border-right: none;
+    border-bottom: 2px solid oklch(98.5% 0 0deg);
+  }
+
+  /* Seção Início */
+  .content .tab-content .div-texto {
+    align-items: center;
+    text-align: center;
+  }
+
+  .content .tab-content .div-texto h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .content .tab-content h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .content .tab-content .div-texto p {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  /* Seção Sobre */
+  .content #sobre .div-texto {
+    width: 95%;
+    flex-direction: column;
+    padding: 20px 15px;
+  }
+
+  .content #sobre .foto-perfil {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 15px;
+  }
+
+  .content #sobre .div-texto-sobre {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .content #sobre h2 {
+    font-size: 24px;
+  }
+
+  .content #sobre p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .content #sobre .class-buttons-texto-sobre {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .content #sobre .button-fake-curriculo {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  /* Seção Formação */
+  .content #formacao .div-texto {
+    width: 95%;
+  }
+
+  .content #formacao .class-section-cards-e-texto {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .content #formacao .div-cards {
+    width: 100%;
+  }
+
+  .content #formacao p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  /* Seção Contato */
+  .content #contato .div-texto {
+    width: 95%;
+  }
+
+  .content #contato .form-group input,
+  .content #contato .form-group textarea {
+    width: 100%;
+    max-width: 280px;
+  }
+}

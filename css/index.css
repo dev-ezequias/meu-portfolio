@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(./responsive.css);
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -261,8 +262,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  margin-top: 30px;
+  height: 380px;
   gap: 15px 0px;
+}
+
+.ou{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .content #contato .form-group label {
   color: #f0f8ff;
@@ -435,3 +443,4 @@ body {
   color: #bdc3c7;
   transition: 0.2s ease-in-out;
 }/*# sourceMappingURL=index.css.map */
+
